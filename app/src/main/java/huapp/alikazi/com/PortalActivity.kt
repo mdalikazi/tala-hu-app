@@ -4,14 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import kotlinx.android.synthetic.main.page_2.*
+import kotlinx.android.synthetic.main.activity_portal.*
+import kotlinx.android.synthetic.main.toolbar.*
 
-class Page2Activity : AppCompatActivity() {
+class PortalActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.page_2)
-        setTitle(R.string.title_hu_portal)
+        setContentView(R.layout.activity_portal)
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = getString(R.string.title_hu_portal)
 
         portal_sidebar_bottom_1.setOnClickListener({
 
@@ -26,9 +28,8 @@ class Page2Activity : AppCompatActivity() {
         })
 
         portal_sidebar_bottom_2.setOnClickListener({
-            var intent = Intent(this, Page3Activity::class.java)
+            var intent = Intent(this, Page4Activity::class.java)
             startActivity(intent)
-            finish()
         })
 
     }

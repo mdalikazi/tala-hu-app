@@ -19,11 +19,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Page1Activity" />
+        <activity android:name=".LoginActivity" />
 
-        <activity android:name=".Page2Activity" />
+        <activity android:name=".PortalActivity" />
 
-        <activity android:name=".Page3Activity" />
+        <activity android:name=".Page4Activity" />
 
     </application>
 

@@ -5,20 +5,20 @@ import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import kotlinx.android.synthetic.main.page_1.*
+import kotlinx.android.synthetic.main.activity_login.*
 
-class Page1Activity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.page_1)
+        setContentView(R.layout.activity_login)
 
         login_submit.setOnClickListener({
             if (isValid()) {
                 login_submit.isEnabled = false
                 login_progress_bar.visibility = View.VISIBLE
                 Handler().postDelayed({
-                    var intent = Intent(this, Page2Activity::class.java)
+                    var intent = Intent(this, PortalActivity::class.java)
                     startActivity(intent)
                     finish()
                 }, 3000)

@@ -9,7 +9,6 @@
         <item name="android:textColorPrimary">@color/colorTextPrimary</item>
         <item name="android:textColorSecondary">@color/colorTextSecondary</item>
         <item name="android:textColorTertiary">@color/colorTextPrimary</item>
-        <item name="android:windowBackground">@color/colorWindowBackgroundBlack</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
