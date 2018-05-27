@@ -21,9 +21,8 @@ class LoginActivity : AppCompatActivity() {
                 login_progress_bar.visibility = View.VISIBLE
                 val imm = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
                 imm.hideSoftInputFromWindow(this.currentFocus.windowToken, 0)
-//                window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN)
                 Handler().postDelayed({
-                    var intent = Intent(this, PortalActivity::class.java)
+                    val intent = Intent(this, PortalActivity::class.java)
                     startActivity(intent)
                     finish()
                 }, 3000)
