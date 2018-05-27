@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">HUApp</string>
-    <string name="login_email_hint">Enter email</string>
-    <string name="login_password_hint">Enter password</string>
-    <string name="login_submit_button">Submit</string>
+    <string name="login_email_hint">الرقم الجامعي</string>
+    <string name="login_password_hint">كلمة السر</string>
+    <string name="login_submit_button">دخول</string>
     <string name="login_validity_error">This field is required</string>
     <string name="title_hu_portal">HU\'s Portal</string>
 </resources>

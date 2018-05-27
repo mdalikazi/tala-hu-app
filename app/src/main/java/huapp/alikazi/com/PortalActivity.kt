@@ -20,15 +20,31 @@ class PortalActivity : AppCompatActivity() {
             if (portal_sidebar_bottom_2.visibility ==  View.GONE) {
                 portal_sidebar_bottom_2.visibility = View.VISIBLE
                 portal_sidebar_bottom_1.visibility = View.GONE
+                portal_button_1.visibility = View.VISIBLE
+                portal_button_2.visibility = View.VISIBLE
+                portal_button_3.visibility = View.VISIBLE
             } else {
                 portal_sidebar_bottom_2.visibility = View.GONE
                 portal_sidebar_bottom_1.visibility = View.VISIBLE
+                portal_button_1.visibility = View.GONE
+                portal_button_2.visibility = View.GONE
+                portal_button_3.visibility = View.GONE
             }
 
         })
 
-        portal_sidebar_bottom_2.setOnClickListener({
+        portal_button_1.setOnClickListener({
             var intent = Intent(this, Page4Activity::class.java)
+            startActivity(intent)
+        })
+
+        portal_button_2.setOnClickListener({
+            var intent = Intent(this, Page5Activity::class.java)
+            startActivity(intent)
+        })
+
+        portal_button_3.setOnClickListener({
+            var intent = Intent(this, Page6Activity::class.java)
             startActivity(intent)
         })
 
