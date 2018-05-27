@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="center"
-                android:src="@drawable/page_6"/>
+                android:src="@drawable/page_7"/>
 
         </RelativeLayout>
 

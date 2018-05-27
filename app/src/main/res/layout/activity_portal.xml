@@ -25,6 +25,14 @@
                 android:scaleType="center"
                 android:src="@drawable/portal_sidebar_top" />
 
+            <Button
+                android:id="@+id/portal_button_top_1"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="150dp"
+                android:layout_alignTop="@+id/portal_sidebar_top"
+                android:background="@color/colorTransparent" />
+
             <ImageView
                 android:id="@+id/portal_sidebar_bottom_1"
                 android:layout_width="wrap_content"

@@ -33,6 +33,11 @@ class PortalActivity : AppCompatActivity() {
 
         })
 
+        portal_button_top_1.setOnClickListener({
+            var intent = Intent(this, Page7Activity::class.java)
+            startActivity(intent)
+        })
+
         portal_button_1.setOnClickListener({
             var intent = Intent(this, Page4Activity::class.java)
             startActivity(intent)

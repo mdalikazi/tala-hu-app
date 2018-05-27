@@ -29,6 +29,8 @@
 
         <activity android:name=".Page6Activity" />
 
+        <activity android:name=".Page7Activity" />
+
     </application>
 
 </manifest>

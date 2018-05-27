@@ -1,10 +1,12 @@
 package huapp.alikazi.com
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -17,6 +19,9 @@ class LoginActivity : AppCompatActivity() {
             if (isValid()) {
                 login_submit.isEnabled = false
                 login_progress_bar.visibility = View.VISIBLE
+                val imm = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.hideSoftInputFromWindow(this.currentFocus.windowToken, 0)
+//                window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN)
                 Handler().postDelayed({
                     var intent = Intent(this, PortalActivity::class.java)
                     startActivity(intent)
